@@ -28,3 +28,24 @@ _Name_ identifies a _variable_, which stores object's _value_. Languages provide
 Names are used to abstract and build objects of increasing complexity. In Scheme: `define`.
 
 _Environment_ of interpreter is memory keeping track of name-object pairs.
+
+### Evaluating Combinations
+
+Interpreter follows procedure:
+1. evaluate subexpressions of combination
+2. apply operator to operands
+
+Thus evaluation process has _recursive_ nature.
+
+Tree representation.
+
+In the base case:
+1. values of numerals are numbers that they name
+2. built-in operators are machine-instruction sequences
+3. values of other names stored in environment
+
+(second one as a special case of the third)
+
+_Special forms_ — exception to evaluation rules. For example, `(define x 3)` is not a combination and has own evaluation rule.
+
+Various kinds of expressions with associated evaluation rules constitute the _syntax of programming language_.
