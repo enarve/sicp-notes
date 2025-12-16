@@ -17,6 +17,14 @@ These are used for data and procedures.
 
 ### Expressions
 
-Combinations: oparator and operands. Prefix notation. Nested combinations.
+Combinations: operator and operands. Prefix notation. Nested combinations.
 
 _Read-eval-print_ loop of interpreter.
+
+### Naming and Environment
+
+_Name_ identifies a _variable_, which stores object's _value_. Languages provide names to refer to objects.
+
+Names are used to abstract and build objects of increasing complexity. In Scheme: `define`.
+
+_Environment_ of interpreter is memory keeping track of name-object pairs.
