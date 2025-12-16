@@ -49,3 +49,11 @@ In the base case:
 _Special forms_ — exception to evaluation rules. For example, `(define x 3)` is not a combination and has own evaluation rule.
 
 Various kinds of expressions with associated evaluation rules constitute the _syntax of programming language_.
+
+### Compound procedures
+
+Procedure definition.
+```scheme
+(define (square x) (* x x))
+```
+Definition is stored in environment under associated name. Creating procedure and giving it a name — two operations, here combined.
