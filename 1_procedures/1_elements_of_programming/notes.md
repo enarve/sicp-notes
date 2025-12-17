@@ -2,7 +2,7 @@
 
 _Computational process_ manipulates data.
 
-_Programm_ — pattern of rules. Program direct processes.
+_Program_ — pattern of rules. Program direct processes.
 
 _Interpreter_ carries out processes that were written in specific language.
 
@@ -21,7 +21,7 @@ Combinations: operator and operands. Prefix notation. Nested combinations.
 
 _Read-eval-print_ loop of interpreter.
 
-### Naming and Environment
+### Naming and environment
 
 _Name_ identifies a _variable_, which stores object's _value_. Languages provide names to refer to objects.
 
@@ -29,7 +29,7 @@ Names are used to abstract and build objects of increasing complexity. In Scheme
 
 _Environment_ of interpreter is memory keeping track of name-object pairs.
 
-### Evaluating Combinations
+### Evaluating combinations
 
 Interpreter follows procedure:
 1. evaluate subexpressions of combination
@@ -58,10 +58,28 @@ Procedure definition.
 ```
 Definition is stored in environment under associated name. Creating procedure and giving it a name — two operations, here combined.
 
-### The Substitution Model for Procedure Application
+### The substitution model for procedure application
 
 To apply compound procedure to arguments:
 - evaluate the procedure with parameters replaced by arguments (substitution)
 
 _Applicative-order evaluation_ — evaluate arguments and then apply.
 _Normal-order evaluation_ — fully expand and then reduce.
+
+### Conditional expressions and predicates
+
+Case analysis. Clauses with predicates.
+
+```scheme
+(define (abs x)
+  (cond ((> x 0) x)
+        ((= x 0) 0)
+        ((< x 0) (- x))))
+
+(define (abs x)
+  (if (< x 0)
+      (- x)
+      x))
+```
+
+Logical composition operations: `and`, `or`, `not`.
