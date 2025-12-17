@@ -57,3 +57,11 @@ Procedure definition.
 (define (square x) (* x x))
 ```
 Definition is stored in environment under associated name. Creating procedure and giving it a name — two operations, here combined.
+
+### The Substitution Model for Procedure Application
+
+To apply compound procedure to arguments:
+- evaluate the procedure with parameters replaced by arguments (substitution)
+
+_Applicative-order evaluation_ — evaluate arguments and then apply.
+_Normal-order evaluation_ — fully expand and then reduce.
