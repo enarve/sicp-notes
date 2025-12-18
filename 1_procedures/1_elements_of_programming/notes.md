@@ -83,3 +83,7 @@ Case analysis. Clauses with predicates.
 ```
 
 Logical composition operations: `and`, `or`, `not`.
+
+### Example: square roots by Newton's method
+
+Procedures are much like mathematical functions. Procedures must be effective.
