@@ -86,4 +86,6 @@ Logical composition operations: `and`, `or`, `not`.
 
 ### Example: square roots by Newton's method
 
-Procedures are much like mathematical functions. Procedures must be effective.
+Procedures are much like mathematical functions. But procedures are imperative descriptions, whereas functions — declarative. Procedures are _how to_ instructions.
+
+Square root of x: make a guess y, take an average between y and x / y, use it as a new guess, repeat.
