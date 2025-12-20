@@ -89,3 +89,20 @@ Logical composition operations: `and`, `or`, `not`.
 Procedures are much like mathematical functions. But procedures are imperative descriptions, whereas functions — declarative. Procedures are _how to_ instructions.
 
 Square root of x: make a guess y, take an average between y and x / y, use it as a new guess, repeat.
+
+### Procedures as black-box abstractions
+
+Decomposition of problem into subproblems (of procedure into subprocedures). Each procedure should accomplish identifiable task and used as a module by other procedures.
+
+A user should not need to know how procedure is implemented in order to use it.
+
+Local names in procedure definition. Parameters should be local to procedure. Procedure definition _binds_ formal parameters. If variable is not _bound_, it's called _free_. _Scope_ of name — set of expressions for which binding defines it's name. Body of procedure as scope.
+
+```scheme
+(define (good-enough? guess x)
+  (< (abs (- (square guess) x)) 0.001))
+```
+
+— `guess` and `x` are bound variables.
+
+Localization of subprocedures, block structure. Lexical scoping.
