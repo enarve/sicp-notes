@@ -16,3 +16,13 @@ _Iterative process_. Keeping track of _state variables_. Fixed rule to describe 
 Recursive procedure — procedure that refers to itself. Not the same as recursive process, which describes process evolution, not syntactical definition.
 
 Special-purpose _looping constructs_. _Tail-recursive_ implementation of language: keeping iterative process in constant (number of state varibles) space (memory).
+
+### Tree recursion
+
+Fibonacci numbers, each number is sum of the preceding two:
+`0, 1, 1, 2, 3, 5, 8, 13, 21, ...`
+
+Recursive and iterative versions of fibonacci numbers computation. Tree-like structure of recursive, exponential growth of steps. Efficiency of iteration with three state varibales.
+
+#### Example: counting change
+Compute the number of ways to combine smaller denomination into one dollar summarized.
