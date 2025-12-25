@@ -21,4 +21,17 @@ $\phi^{-1}+\phi^{-2}=\frac{2}{1+\sqrt5} + \frac{4}{(1+\sqrt5)^2}=\frac{2(1+\sqrt
 
 $\psi^{-1}+\psi^{-2}=\frac{2}{1-\sqrt5} + \frac{4}{(1-\sqrt5)^2}=\frac{2(1-\sqrt5)}{(1-\sqrt5)^2}+\frac{4}{(1-\sqrt5)^2}=\frac{6-2\sqrt5}{(1-\sqrt5)^2}=\frac{3-\sqrt5}{3-\sqrt5}=1$
 
-$Fib(n+1) = \frac{\phi^{n+1} - \psi^{n+1}}{\sqrt5}$, Q.E.D.
+$Fib(n+1) = \frac{\phi^{n+1} - \psi^{n+1}}{\sqrt5}$.
+
+Now, $|Fib(n)-\frac{\phi^n}{\sqrt5}|<\frac12$, because:
+
+$|\frac{\phi^{n} - \psi^{n}}{\sqrt5}-\frac{\phi^n}{\sqrt5}|=|\frac{\psi^{n}}{\sqrt5}|<\frac12$:
+
+$\sqrt4=2<\sqrt5<3=\sqrt9$,
+
+$-\frac12>\frac{1-\sqrt5}{2}>-1$, $\quad\psi = \frac{1-\sqrt{5}}{2}$
+
+$|\psi|<1 \Rightarrow |\psi^n| < 1 < \frac{\sqrt5}{2}$
+
+Q.E.D.
+
