@@ -26,3 +26,11 @@ Recursive and iterative versions of fibonacci numbers computation. Tree-like str
 
 #### Example: counting change
 Compute the number of ways to combine smaller denomination into one dollar summarized.
+
+### Orders of growth
+
+Difference in consuming computational resources among processes. Let `n` measure the size of the problem, and `R(n)` be amount of resources required.
+
+$R(n)$ has order of growth $\Theta(f(n))$ $R(n)=\Theta(f(n))$ if there are positive constants $k_1$ and $k_2$ independent of $n$ such that $k_1f(n)\le R(n) \le k_2f(n)$ for any sufficiently large value of $n$.
+
+Orders of growth provide crude description of bahavior of a process. $\Theta(n)$, $\Theta(\phi^n)$, etc.
