@@ -13,6 +13,8 @@ Expansion followed by contraction, chain of _deferred operations_. _Recursive pr
 
 _Iterative process_. Keeping track of _state variables_. Fixed rule to describe how states must be updated step to step. in `n!` — `n` steps, _linear iterative process_.
 
+Iterative process can be done with fixed set of registers without auxilary memory, recursive process requires memory in stack.
+
 Recursive procedure — procedure that refers to itself. Not the same as recursive process, which describes process evolution, not syntactical definition.
 
 Special-purpose _looping constructs_. _Tail-recursive_ implementation of language: keeping iterative process in constant (number of state varibles) space (memory).
